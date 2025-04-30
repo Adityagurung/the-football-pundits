@@ -42,7 +42,7 @@ The key objectives for our project are:
 
 # [DATA PIPELINE](#data-pipeline)
 
-[⚠️ This Google Project has now been deactivated]
+[⚠️ This Google Project is created on GCP trial account that will expires on 23 July 2025
 
 For achieving the objectives listed above, we build an end-to-end data pipeline, starting from the raw Transfermarkt data on Kaggle, and ending with a Looker dashboard that seeks to shed some insights.
 
@@ -85,7 +85,7 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 
 ## [Visualisation/Dashboard](#visualisationdashboard)
 
-Looker link: https://lookerstudio.google.com/reporting/69909390-89ee-4183-9fb4-fc5b2e79d860 [also look at top picture]
+# Place holder Looker link:
 
 The dashboard consists of three tiles:
 1. Tile #1: Players Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
