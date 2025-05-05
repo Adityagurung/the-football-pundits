@@ -1,42 +1,38 @@
 #!/usr/bin/env python
-# coding: utf-8
-
 import argparse
-
-import pyspark
 from pyspark.sql import SparkSession
 
-parser = argparse.ArgumentParser()
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input_appearances', required=True)
+    parser.add_argument('--input_competitions', required=True)
+    parser.add_argument('--output', required=True)
+    args = parser.parse_args()
 
-parser.add_argument('--input_appearances', required=True)
-parser.add_argument('--input_competitions', required=True)
-parser.add_argument('--output', required=True)
+    spark = SparkSession.builder \
+        .appName('test') \
+        .config('spark.sql.legacy.allowCreatingManagedTableUsingNonemptyLocation', 'true') \
+        .getOrCreate()
 
-args = parser.parse_args()
+    spark.conf.set('temporaryGcsBucket', 'dataproc-temp-asia-southeast1-1026077313769-iixm4lww')
 
-input_appearances = args.input_appearances
-input_competitions = args.input_competitions
-output = args.output
+    # Read data
+    df_appearances = spark.read.parquet(args.input_appearances)
+    df_competitions = spark.read.parquet(args.input_competitions)
 
-spark = SparkSession.builder \
-    .appName('test') \
-    .getOrCreate()
+    # Explicitly handle column ambiguity
+    join_columns = ['competition_id']
+    df_data_all = df_appearances.join(
+        df_competitions,
+        on=join_columns,
+        how='left'
+    )
 
-spark.conf.set('temporaryGcsBucket', 'dataproc-staging-europe-north1-1021722663072-fkqjxac0')
+    # Write to BigQuery with overwrite
+    df_data_all.write.format('bigquery') \
+        .option('table', args.output) \
+        .mode('overwrite') \
+        .save()
 
-# reading data as spark dataframes with previously 
-
-df_appearances = spark.read\
-                    .parquet(input_appearances)
-
-df_competitions = spark.read\
-                    .parquet(input_competitions)
-
-df_data_all = df_appearances.join(df_competitions, on='competition_id', how='left')
-
-df_data_all.registerTempTable('data_all')
-
-df_data_all.write.format('bigquery') \
-    .option('table', output) \
-    .save()
-    
+if __name__ == '__main__':
+    main()
