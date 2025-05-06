@@ -116,11 +116,11 @@ Your contributions and feedback are highly valuable to enhance the quality and f
 
 ## How to Contribute
 
-1. **Issues and Bug Reports:** If you encounter any issues or bugs, please [create an issue](https://github.com/abhirup-ghosh/e2e-data-pipeline/issues). Include detailed information about the problem, steps to reproduce it, and any relevant screenshots.
+1. **Issues and Bug Reports:** If you encounter any issues or bugs, please [create an issue](https://github.com/Adityagurung/e2e-data-pipeline/issues). Include detailed information about the problem, steps to reproduce it, and any relevant screenshots.
 
-2. **Feature Requests:** If you have ideas for new features or enhancements, feel free to [submit a feature request](https://github.com/abhirup-ghosh/e2e-data-pipeline/issues/new) on GitHub. Clearly outline the proposed feature and its potential benefits.
+2. **Feature Requests:** If you have ideas for new features or enhancements, feel free to [submit a feature request](https://github.com/Adityagurung/e2e-data-pipeline/issues/new) on GitHub. Clearly outline the proposed feature and its potential benefits.
 
-3. **Code Contributions:** If you are interested in contributing code, you can [fork the repository](https://github.com/abhirup-ghosh/e2e-data-pipeline/fork) and submit pull requests with your changes. Ensure that your code follows the project's coding standards and practices.
+3. **Code Contributions:** If you are interested in contributing code, you can [fork the repository](https://github.com/Adityagurung/e2e-data-pipeline/fork) and submit pull requests with your changes. Ensure that your code follows the project's coding standards and practices.
 
 4. **Documentation Improvements:** Clear and comprehensive documentation is essential. If you find areas where the documentation can be improved, please let us know or directly submit a pull request to enhance it.
 

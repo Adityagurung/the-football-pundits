@@ -12,7 +12,7 @@ def load_data_from_api(*args, **kwargs):
     """
     Template for loading data from API
     """
-    url = 'https://raw.githubusercontent.com/abhirup-ghosh/e2e-data-pipeline/main/data/competitions.csv'
+    url = 'https://raw.githubusercontent.com/Adityagurung/e2e-data-pipeline/main/data/competitions.csv'
 
     comp_dtype = {
         'competition_id': str,

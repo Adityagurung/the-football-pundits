@@ -25,7 +25,7 @@
 
 * Go to: https://console.cloud.google.com/compute
 * **Create SSH Key pair** using the instructions [here](https://cloud.google.com/compute/docs/connect/create-ssh-keys).
-  * Local Machine (MacOS): `ssh-keygen -t rsa -f ~/.ssh/gcp -C abhirup.ghosh -b 2048`
+  * Local Machine (MacOS): `ssh-keygen -t rsa -f ~/.ssh/gcp -C Adi -b 2048`
   * GCP Compute Engine: **Metadata** &rarr; **SSH Keys** &rarr; add content of (local machine): `cat ~/.ssh/gcp.pub` into SSH Key 1 and save
 * **CREATE INSTANCE** with name `e2e-data-pipeline-capstone-vm` and specifications:
   * Region/Zone: `europe-north1 (Finland)`/`europe-north1-a` 🚨🚨 SUPER IMPORTANT
@@ -40,7 +40,7 @@
   sftp> mkdir .gc
   sftp> cd .gc
   sftp> put gcp_service_capstone.json
-  Uploading gcp_service_capstone.json to /home/abhirup.ghosh/.gc/gcp_service_capstone.json
+  Uploading gcp_service_capstone.json to /home/Adi/.gc/gcp_service_capstone.json
   gcp_service_capstone.json              100% 2404    46.1KB/s   00:00    
   ```
 
@@ -51,14 +51,14 @@
     ```bash
     $~> cd ${HOME}
     $~> EXTERNAL_IP="XX.XX.XXX.XXX"
-    $~> ssh -i ~/.ssh/gcp abhirup.ghosh@${EXTERNAL_IP}
+    $~> ssh -i ~/.ssh/gcp Adi@${EXTERNAL_IP}
 
     Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1053-gcp x86_64)
     .
     .
     .
     .
-    abhirup.ghosh@e2e-data-pipeline-capstone-vm:~$ 
+    Adi@e2e-data-pipeline-capstone-vm:~$ 
     ```
 
 * **Setup local `~/.ssh/config`** with the following content for shortcut:
@@ -66,8 +66,8 @@
     ```vim
     Host = capstone
             Hostname XX.XX.XXX.XXX
-            User abhirup.ghosh
-            IdentityFile /Users/abhirupghosh/.ssh/gcp
+            User Adi
+            IdentityFile /Users/Adi/.ssh/gcp
     ```
 
     and later ssh into VM using:
@@ -120,7 +120,7 @@ $~> wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
 $~> bash Anaconda3-2024.02-1-Linux-x86_64.sh
 ```
 
-This installs Anaconda under `/home/abhirup.ghosh/anaconda3` and should modify the `~/.bashrc` to change the default prompt.
+This installs Anaconda under `/home/Adi/anaconda3` and should modify the `~/.bashrc` to change the default prompt.
 
 
 ### 3. Docker and docker-compose
@@ -179,7 +179,7 @@ $~/bin> rm terraform_1.7.5_linux_amd64.zip
 First, one needs to create an SSH key pair between the VM and github.
 
 ```bash
-$~> git clone git@github.com:abhirup-ghosh/e2e-data-pipeline.git
+$~> git clone git@github.com:Adityagurung/the-football-pundits.git
 $~> cd e2e-data-pipeline
 ```
 

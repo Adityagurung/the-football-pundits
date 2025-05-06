@@ -11,7 +11,7 @@ Pre-requisites: [Orchestrate raw data into GCS bucket using Mage](../mage-orches
 3. Create project with:
     * project name: `e2e-data-pipeline-capstone`
     * project sub-directory: `dbt`
-    * repository: `git@github.com:abhirup-ghosh/e2e-data-pipeline.git`
+    * repository: `git@github.com:Adityagurung/the-football-pundits.git`
     * BigQuery connection: `gcp_service_capstone.json` (same service account as terraform resources)
 
 ## Setup dbt Model

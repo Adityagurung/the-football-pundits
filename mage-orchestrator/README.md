@@ -13,7 +13,7 @@ Pre-requisites:
 1. Clone the repo:
 
     ```bash
-    git clone https://github.com/abhirup-ghosh/e2e-data-pipeline.git
+    git clone https://github.com/Adityagurung/the-football-pundits.git
     ```
 
 2. Navigate to the orchestrator directory:
