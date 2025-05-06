@@ -1,5 +1,4 @@
 # Exclude data and secrets
-data/
 .env
 *.log
 __pycache__/
