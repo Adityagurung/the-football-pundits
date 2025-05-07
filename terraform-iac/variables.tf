@@ -5,13 +5,13 @@ variable "credentials" {
 
 variable "project" {
   description = "GCP Project ID"
-  default     = "e2e-data-pipeline-capstone"
+  default     = "winter-pivot-457709-k5"
   type        = string
 }
 
 variable "region" {
   description = "Region for GCP resources. Choose as per your location: https://cloud.google.com/about/locations"
-  default     = "europe-north1"
+  default     = "europe-north1-a"
   type        = string
 }
 
