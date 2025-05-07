@@ -1,17 +1,21 @@
 # Exclude data and secrets
+
 .env
 *.log
 __pycache__/
 *.pyc
 
 # Local .terraform directories
+
 **/.terraform/*
 
 # .tfstate files
+
 *.tfstate
 *.tfstate.*
 
 # Crash log files
+
 crash.log
 crash.*.log
 
@@ -20,14 +24,17 @@ crash.*.log
 # password, private keys, and other secrets. These should not be part of version 
 # control as they are data points which are potentially sensitive and subject 
 # to change depending on the environment.
+
 *.tfvars
 *.tfvars.json
 
 # Ignore lock.hcl files
+
 *.hcl
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
+
 override.tf
 override.tf.json
 *_override.tf
