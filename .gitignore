@@ -1,6 +1,5 @@
 # Exclude data and secrets
 
-.env
 *.log
 __pycache__/
 *.pyc
