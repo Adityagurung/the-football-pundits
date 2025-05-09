@@ -12,7 +12,7 @@ def load_data_from_api(*args, **kwargs):
     """
     Template for loading data from API
     """
-    url = 'https://media.githubusercontent.com/media/Adityagurung/e2e-data-pipeline/main/data/appearances.csv'
+    url = 'https://media.githubusercontent.com/media/Adityagurung/the-football-pundits/main/data/appearances.csv'
     
     appearance_dtype = {
         'appearance_id': str,
