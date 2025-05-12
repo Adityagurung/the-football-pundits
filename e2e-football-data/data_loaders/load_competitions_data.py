@@ -31,24 +31,8 @@ def load_data_from_api(*args, **kwargs):
         'is_major_national_league': pd.Int64Dtype()
     }
 
-    # ─── Replace this simple read_csv call ───────────────────────────────
-    # return pd.read_csv(url, sep=',')
-    #
-    # ─── With the robust fetch-and-parse loop below ──────────────────────
 
-    max_retries = 3
-    for attempt in range(1, max_retries + 1):
-        try:
-            resp = requests.get(url, timeout=10)
-            resp.raise_for_status()
-            # parse the CSV text into a DataFrame
-            return pd.read_csv(io.StringIO(resp.text), sep=',', dtype=comp_dtype)
-        except requests.HTTPError:
-            if attempt == max_retries:
-                # on final failure, let Mage log and bubble up
-                raise
-            # otherwise wait exponentially longer each retry
-            time.sleep(2 ** attempt)
+    return pd.read_csv(url, sep=',')
 
 
 @test

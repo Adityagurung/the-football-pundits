@@ -30,25 +30,8 @@ def load_data_from_api(*args, **kwargs):
         'assists': pd.Int64Dtype(),
         'minutes_played': pd.Int64Dtype()
     }
-
-    max_retries = 3
-    for attempt in range(1, max_retries + 1):
-        try:
-            resp = requests.get(url, timeout=10)
-            resp.raise_for_status()
-            # Parse CSV text into DataFrame with your dtypes and date parsing
-            return pd.read_csv(
-                io.StringIO(resp.text),
-                sep=',',
-                dtype=appearance_dtype,
-                parse_dates=['date'],
-            )
-        except requests.HTTPError:
-            if attempt == max_retries:
-                # let Mage log the final failure
-                raise
-            # exponential backoff before retrying
-            time.sleep(2 ** attempt)
+    
+    return pd.read_csv(url, sep=',', dtype=appearance_dtype, parse_dates=['date'])
 
 
 @test
