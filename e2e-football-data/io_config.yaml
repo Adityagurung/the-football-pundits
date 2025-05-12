@@ -40,8 +40,10 @@ default:
   DUCKDB_SCHEMA: main
   # Google
   default:
-    GOOGLE_SERVICE_ACC_KEY_FILEPATH: "C:/Users/Adi/.gc/gcp_service_capstone.json"
-    GOOGLE_LOCATION: US  # Optional
+    google_cloud_storage:
+      project: winter-pivot-457709-k5
+      credentials: C:/Users/Adi/.gc/gcp_service_capstone.json
+
   # MongoDB
   # Specify either the connection string or the (host, password, user, port) to connect to MongoDB.
   MONGODB_CONNECTION_STRING: "mongodb://{username}:{password}@{host}:{port}/"
