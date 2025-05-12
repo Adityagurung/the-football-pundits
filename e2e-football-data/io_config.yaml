@@ -40,18 +40,20 @@ default:
   DUCKDB_SCHEMA: main
   # Google
   default: 
-  {
-    "type": "service_account",
-    "project_id": "winter-pivot-457709-k5",
-    "private_key_id": "c951cf4eb11ad0539d24dba8621b6a06399fd91e",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDNS2LO2nFxrHD1\nAM18TxMAeG6OqWRcN+UFg6yxpm/uf9sJvgSdDhcOtFx3E+2ncXkh2apOBmoKOEh6\nrsY4EumpaWsOhq1LJRLk+359sRx9GQENVPM4kj4Bk6gmqFODV/D66G638OZNq/fZ\nGI7BNv57FY92eUKCxaaHeQ2zbRYvRnQwtNqBoNG7VXMEmrZEsySjJptaR2TMBv1I\n+tkRavT+4Zplts3X8nGea0wNknmWrPFmRDDd5A8j7TOkHxXCbtG1pr8e5XRSlymK\nJfS92YFZSpHRLytWc9T2vq7MmegjRvFQx3tMm9jy/ig108Fsb4dHH212cnLvk8x2\nSskvfnT1AgMBAAECggEABAAeJ2FBg4FPJzBnkK6ldGV5uWJ1ep2P4y+0b7bKU20J\nj+hJxI9ies51cdBBLzmKbn2EcHuhWTHNFG+aRxFJR9xDx4yaImQmeNtUv5lyBcG1\nD/Ux6HjjEpqgaiEZatkNxgSS/xcc6ce6L0W8/Gi4WfOAMEMUfSIMXh30BXp7S5sB\n19dXqWABbsywlKHwBJ/wXJ5sBBjFDcfku8JUixSWbw2HXkEn/farqhEKedAPBjGZ\nPaM0h94T4YZwSBlXa1barV5mjI6rInfwv0YTDd2ztYYSnGfQVXPFJ+zStt7zk98C\nHFytBPBOsELiLoTQCIARjM9vfTqy1U0djz51MzUrgQKBgQDlzuInuXWALV0j2e29\n7AGEifqmsJ4UPU0FYHUUZxfKDAxOJSLj8ozO/OeEHFEywg19MaJ0u3mxNrHEmiM+\nhRLelckOZ1btxmGyVteCk5ZAtodK9B/cBaBX9GVDFasnXv/pe8NIQsULvN5ifiIx\n/vjDejDnGCqgQ+ACv1fUidOOgQKBgQDksURXEBD2r70y0iucpEZRH5zrY0s8oqYn\nWkCVW9YljuVzUWUB6QGMXbggCgElgQ7SH1POmGVfXAEFyqozevpslwnkCtpgbvXk\n8OQJtKS56sD6XDbvgsktMDD3pQZ76XYxEZSV38LdM2dL9atV7xsLuNJ3vD2Nvz2L\n3lXXmQxUdQKBgGnyVSVHRTqQr24F3KtAkPqPujT7HAXstQOTkqaTWM5Xe5zTViCN\nBAmxYvLvMygZeqqLJYB3pgTjWFVxUmpSY36mw4iWb+czHHthuf2DGTRAcmNF5SJE\nncWu8Lha1wtRqt3zpvY7giiFLGlwCUfPatSEEuOXqp80a6QYnt9no1cBAoGAYBHj\nvps+NRMwbMgDkCMmcu/P0MZ+lbNSD1gHp3bT6CU2WJJJ11qVzuyT68moH6QuoLCO\nWUyF0WBqAY/YnhW8W5+7hPPWNwqF+64Cbd1YEc3/UW0pmsYbUwNanr3Rkn5Jq2VS\nQP+l8ZyleTBz0H7Iosz6hVgrl39OEJLPBuoBVv0CgYA7JEXFiUuRNOwyP8aeIXcm\nh2V3gNXo8EWRz5yz4NsJgjFWn/DbwtYHIsguFZo9oMsSWZCXemrxxRdtlYLUwPNm\nRPYk80xh7bWvHxTpmA7P17AS3fXGpUYZQRZHJ4E4et/7P1dlwpBd5CeDtwF8RaA6\nntRRyTqQsNte7KFc+BOxlw==\n-----END PRIVATE KEY-----\n",
-    "client_email": "terraform-runner@winter-pivot-457709-k5.iam.gserviceaccount.com",
-    "client_id": "1234567890",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-runner%40winter-pivot-457709-k5.iam.gserviceaccount.com"
-  }
+      GOOGLE_SERVICE_ACC_KEY:
+        "type": "service_account"
+        "project_id": "winter-pivot-457709-k5"
+        "private_key_id": "c951cf4eb11ad0539d24dba8621b6a06399fd91e"
+        "private_key": "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDNS2LO2nFxrHD1\nAM18TxMAeG6OqWRcN+UFg6yxpm/uf9sJvgSdDhcOtFx3E+2ncXkh2apOBmoKOEh6\nrsY4EumpaWsOhq1LJRLk+359sRx9GQENVPM4kj4Bk6gmqFODV/D66G638OZNq/fZ\nGI7BNv57FY92eUKCxaaHeQ2zbRYvRnQwtNqBoNG7VXMEmrZEsySjJptaR2TMBv1I\n+tkRavT+4Zplts3X8nGea0wNknmWrPFmRDDd5A8j7TOkHxXCbtG1pr8e5XRSlymK\nJfS92YFZSpHRLytWc9T2vq7MmegjRvFQx3tMm9jy/ig108Fsb4dHH212cnLvk8x2\nSskvfnT1AgMBAAECggEABAAeJ2FBg4FPJzBnkK6ldGV5uWJ1ep2P4y+0b7bKU20J\nj+hJxI9ies51cdBBLzmKbn2EcHuhWTHNFG+aRxFJR9xDx4yaImQmeNtUv5lyBcG1\nD/Ux6HjjEpqgaiEZatkNxgSS/xcc6ce6L0W8/Gi4WfOAMEMUfSIMXh30BXp7S5sB\n19dXqWABbsywlKHwBJ/wXJ5sBBjFDcfku8JUixSWbw2HXkEn/farqhEKedAPBjGZ\nPaM0h94T4YZwSBlXa1barV5mjI6rInfwv0YTDd2ztYYSnGfQVXPFJ+zStt7zk98C\nHFytBPBOsELiLoTQCIARjM9vfTqy1U0djz51MzUrgQKBgQDlzuInuXWALV0j2e29\n7AGEifqmsJ4UPU0FYHUUZxfKDAxOJSLj8ozO/OeEHFEywg19MaJ0u3mxNrHEmiM+\nhRLelckOZ1btxmGyVteCk5ZAtodK9B/cBaBX9GVDFasnXv/pe8NIQsULvN5ifiIx\n/vjDejDnGCqgQ+ACv1fUidOOgQKBgQDksURXEBD2r70y0iucpEZRH5zrY0s8oqYn\nWkCVW9YljuVzUWUB6QGMXbggCgElgQ7SH1POmGVfXAEFyqozevpslwnkCtpgbvXk\n8OQJtKS56sD6XDbvgsktMDD3pQZ76XYxEZSV38LdM2dL9atV7xsLuNJ3vD2Nvz2L\n3lXXmQxUdQKBgGnyVSVHRTqQr24F3KtAkPqPujT7HAXstQOTkqaTWM5Xe5zTViCN\nBAmxYvLvMygZeqqLJYB3pgTjWFVxUmpSY36mw4iWb+czHHthuf2DGTRAcmNF5SJE\nncWu8Lha1wtRqt3zpvY7giiFLGlwCUfPatSEEuOXqp80a6QYnt9no1cBAoGAYBHj\nvps+NRMwbMgDkCMmcu/P0MZ+lbNSD1gHp3bT6CU2WJJJ11qVzuyT68moH6QuoLCO\nWUyF0WBqAY/YnhW8W5+7hPPWNwqF+64Cbd1YEc3/UW0pmsYbUwNanr3Rkn5Jq2VS\nQP+l8ZyleTBz0H7Iosz6hVgrl39OEJLPBuoBVv0CgYA7JEXFiUuRNOwyP8aeIXcm\nh2V3gNXo8EWRz5yz4NsJgjFWn/DbwtYHIsguFZo9oMsSWZCXemrxxRdtlYLUwPNm\nRPYk80xh7bWvHxTpmA7P17AS3fXGpUYZQRZHJ4E4et/7P1dlwpBd5CeDtwF8RaA6\nntRRyTqQsNte7KFc+BOxlw=="
+        "client_email": "terraform-runner@winter-pivot-457709-k5.iam.gserviceaccount.com"
+        "client_id": "1234567890"
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth"
+        "token_uri": "https://oauth2.googleapis.com/token"
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs"
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-runner%40winter-pivot-457709-k5.iam.gserviceaccount.com"
+      GOOGLE_SERVICE_ACC_KEY_FILEPATH: "C:/Users/Adi/.gc/gcp_service_capstone.json"
+      GOOGLE_LOCATION: US
+
 
   # MongoDB
   # Specify either the connection string or the (host, password, user, port) to connect to MongoDB.
