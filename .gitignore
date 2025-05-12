@@ -52,7 +52,7 @@ terraform.rc
 spark/lib/gcs-connector-hadoop3-2.2.5.jar
 
 # pipeline created via mage run
-e2e-football-data
+io_config.yaml
 
 # ignore other csv files
 game_events.csv
