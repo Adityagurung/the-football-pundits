@@ -42,7 +42,6 @@ default:
   # Google
   GOOGLE_SERVICE_ACC_KEY_FILEPATH: "/home/Adi/.gc/gcp_service_capstone.json"
 
-
   # MongoDB
   # Specify either the connection string or the (host, password, user, port) to connect to MongoDB.
   MONGODB_CONNECTION_STRING: "mongodb://{username}:{password}@{host}:{port}/"
