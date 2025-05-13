@@ -1,1 +1,0 @@
-{"appearance_id": "str", "game_id": "Int64", "player_id": "Int64", "player_club_id": "Int64", "player_current_club_id": "Int64", "date": "datetime64[ns]", "player_name": "str", "competition_id": "str", "yellow_cards": "Int64", "red_cards": "Int64", "goals": "Int64", "assists": "Int64", "minutes_played": "Int64"}
