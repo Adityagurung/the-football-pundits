@@ -40,7 +40,7 @@ default:
   DUCKDB_SCHEMA: main
  
   # Google
-  GOOGLE_SERVICE_ACC_KEY_FILEPATH: "C:/Users/Adi/.gc/gcp_service_capstone.json"
+  GOOGLE_SERVICE_ACC_KEY_FILEPATH: "/home/Adi/.gc/gcp_service_capstone.json"
 
 
   # MongoDB
