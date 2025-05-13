@@ -74,7 +74,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: e2e_football_data
+name: e2e-football-data
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
