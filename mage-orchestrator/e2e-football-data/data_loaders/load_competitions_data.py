@@ -1,9 +1,6 @@
 import io
 import pandas as pd
 import requests
-import time
-
-
 if 'data_loader' not in globals():
     from mage_ai.data_preparation.decorators import data_loader
 if 'test' not in globals():
@@ -30,7 +27,6 @@ def load_data_from_api(*args, **kwargs):
         'url': str,
         'is_major_national_league': pd.Int64Dtype()
     }
-
 
     return pd.read_csv(url, sep=',')
 

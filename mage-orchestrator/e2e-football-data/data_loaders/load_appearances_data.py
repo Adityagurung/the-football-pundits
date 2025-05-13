@@ -1,8 +1,6 @@
 import io
 import pandas as pd
 import requests
-import time
-
 if 'data_loader' not in globals():
     from mage_ai.data_preparation.decorators import data_loader
 if 'test' not in globals():
@@ -12,10 +10,10 @@ if 'test' not in globals():
 @data_loader
 def load_data_from_api(*args, **kwargs):
     """
-    Template for loading data from API with retry logic
+    Template for loading data from API
     """
     url = 'https://media.githubusercontent.com/media/abhirup-ghosh/e2e-data-pipeline/main/data/appearances.csv'
-
+    
     appearance_dtype = {
         'appearance_id': str,
         'game_id': pd.Int64Dtype(),
@@ -29,8 +27,8 @@ def load_data_from_api(*args, **kwargs):
         'goals': pd.Int64Dtype(),
         'assists': pd.Int64Dtype(),
         'minutes_played': pd.Int64Dtype()
-    }
-    
+        }
+
     return pd.read_csv(url, sep=',', dtype=appearance_dtype, parse_dates=['date'])
 
 
