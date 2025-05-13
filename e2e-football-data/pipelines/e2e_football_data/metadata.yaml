@@ -85,5 +85,5 @@ spark_config: {}
 tags: []
 type: python
 uuid: e2e_football_data
-variables_dir: C:/Users/Adi/the-football-pundits/.mage_data/
+variables_dir: C:/Users/Adi/the-football-pundits/.mage_data/e2e-e2e_football_data/
 widgets: []
