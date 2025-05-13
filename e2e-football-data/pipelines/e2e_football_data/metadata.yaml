@@ -58,7 +58,7 @@ blocks:
   name: export_appearances_gcs
   retry_config: null
   status: updated
-  timeout: null
+  timeout: 600
   type: data_exporter
   upstream_blocks:
   - load_appearances_data
