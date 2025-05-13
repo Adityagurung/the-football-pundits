@@ -4,6 +4,10 @@
 __pycache__/
 *.pyc
 
+
+# vs code files
+*.vscode
+
 # Local .terraform directories
 
 **/.terraform/*
@@ -44,6 +48,9 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+#ignore files of mage
+.mage_data/
 
 # Ignore lock.hcl files
 *.hcl
