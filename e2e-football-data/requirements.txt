@@ -1,2 +1,0 @@
-# requirements.txt
-google-cloud-storage>=2.0.0

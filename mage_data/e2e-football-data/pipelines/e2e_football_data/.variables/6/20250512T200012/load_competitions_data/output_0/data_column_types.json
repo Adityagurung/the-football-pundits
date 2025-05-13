@@ -1,1 +1,0 @@
-{"competition_id": "str", "competition_code": "str", "name": "str", "sub_type": "str", "type": "str", "country_id": "int64", "country_name": "str", "domestic_league_code": "str", "confederation": "str", "url": "str", "is_major_national_league": "bool"}
