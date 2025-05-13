@@ -21,7 +21,7 @@ def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     now_fpath = now.strftime("%Y/%m/%d")
 
     config_path = path.join(get_repo_path(), 'io_config.yaml')
-    config_profile = 'default'
+    config_profile = 'dev'
 
     bucket_name = 'capstone_datalake'
     object_key = 'raw/appearances.parquet'
