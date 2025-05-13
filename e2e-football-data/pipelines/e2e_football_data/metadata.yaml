@@ -10,7 +10,7 @@ blocks:
   language: python
   name: load_competitions_data
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
@@ -25,7 +25,7 @@ blocks:
   language: python
   name: export_competitions_gcs
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -42,8 +42,8 @@ blocks:
   language: python
   name: load_appearances_data
   retry_config: null
-  status: executed
-  timeout: null
+  status: updated
+  timeout: 600
   type: data_loader
   upstream_blocks: []
   uuid: load_appearances_data
@@ -57,7 +57,7 @@ blocks:
   language: python
   name: export_appearances_gcs
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
