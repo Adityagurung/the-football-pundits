@@ -25,7 +25,7 @@ blocks:
   language: python
   name: export_appearances_gcs
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -85,5 +85,5 @@ spark_config: {}
 tags: []
 type: python
 uuid: e2e-football-data
-variables_dir: C:/Users/Adi/the-football-pundits/.mage_data/e2e-football-data
+variables_dir: C:/Users/Adi/the-football-pundits/.mage_data/e2e-football-data/e2e-football-data
 widgets: []
