@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: staging
-    database: e2e-football-data
+    database: winter-pivot-457709-k5
     schema: dbt_AdityaGurung 
     tables:
       - name: data_all
