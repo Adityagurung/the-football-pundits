@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: staging
+    database: e2e-football-data
+    schema: capstone_dataset
+    tables:
+      - name: data_all
+
+models:
+  - name: fact_football_data
+    description: "Filtered first-tier appearances for the 5 major European leagues"
