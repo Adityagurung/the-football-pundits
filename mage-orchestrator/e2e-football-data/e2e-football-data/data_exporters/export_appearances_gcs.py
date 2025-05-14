@@ -1,9 +1,10 @@
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
-from mage_ai.io.google_cloud_storage import GoogleCloudStorage
+# no longer import GoogleCloudStorage here
 from pandas import DataFrame
 from os import path
-from google.api_core import exceptions
+from google.cloud import storage
+import io
 
 if 'data_exporter' not in globals():
     from mage_ai.data_preparation.decorators import data_exporter
@@ -11,22 +12,28 @@ if 'data_exporter' not in globals():
 @data_exporter
 def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     """
-    Exports data to GCS with timeout handling and compression.
+    Exports a DataFrame as Parquet to GCS using manual upload
+    with controlled chunk size and explicit timeout.
     """
-    config_path = path.join(get_repo_path(), 'io_config.yaml')
-    config_profile = 'default'
+    # 1. Prepare in-memory Parquet
+    buffer = io.BytesIO()
+    df.to_parquet(buffer, index=False)
+    buffer.seek(0)
 
-    bucket_name = 'capstone_datalake'
-    object_key = 'raw/appearances.parquet'
+    # 2. Initialize GCS client and blob
+    client = storage.Client()                                    # standard client :contentReference[oaicite:3]{index=3}
+    bucket = client.bucket('capstone_datalake')
+    blob = bucket.blob('raw/appearances.parquet')
 
+    # 3. Lower chunk size to 5 MiB to keep each RPC fast
+    blob.chunk_size = 5 * 1024 * 1024                           # must be multiple of 256 KiB :contentReference[oaicite:4]{index=4}
+
+    # 4. Upload with a 10‑minute timeout
     try:
-        GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).export(
-            df,
-            bucket_name,
-            object_key,
+        blob.upload_from_file(
+            buffer,
+            content_type='application/octet-stream',
+            timeout=600                                         # supported here :contentReference[oaicite:5]{index=5}
         )
-        
-    except exceptions.GoogleAPICallError as e:
-        print(f"GCS API Error: {e}")
-    except exceptions.RetryError as e:
-        print(f"Retry failed: {e}")
+    except Exception as e:
+        print(f"Upload failed: {e}")
