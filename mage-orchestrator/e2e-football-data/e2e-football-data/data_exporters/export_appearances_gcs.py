@@ -32,7 +32,7 @@ def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     try:
         blob.upload_from_file(
             buffer,
-            content_type='application/octet-stream',
+            content_type='text/plain',
             timeout=600                                         # supported here :contentReference[oaicite:5]{index=5}
         )
     except Exception as e:
