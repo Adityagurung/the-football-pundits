@@ -1,6 +1,6 @@
 project_type: standalone
 
-variables_dir: ~/.mage_data
+variables_dir: C:/Users/Adi/the-football-pundits/.mage_data/e2e-football-data/
 # remote_variables_dir: s3://bucket/path_prefix
 
 variables_retention_period: '90d'
@@ -52,4 +52,4 @@ notification_config:
     webhook_url: "{{ env_var('MAGE_SLACK_WEBHOOK_URL') }}"
   teams_config:
     webhook_url: "{{ env_var('MAGE_TEAMS_WEBHOOK_URL') }}"
-project_uuid: c55d9575384144a885587b037290950d
+project_uuid: 1d5062b18adb420692f51a42b63dd14b

@@ -4,6 +4,10 @@
 __pycache__/
 *.pyc
 
+
+# vs code files
+*.vscode/
+
 # Local .terraform directories
 
 **/.terraform/*
@@ -45,6 +49,9 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+#ignore files of mage
+.mage_data/
+
 # Ignore lock.hcl files
 *.hcl
 
@@ -52,7 +59,7 @@ terraform.rc
 spark/lib/gcs-connector-hadoop3-2.2.5.jar
 
 # pipeline created via mage run
-e2e-football-data
+io_config.yaml
 
 # ignore other csv files
 game_events.csv
