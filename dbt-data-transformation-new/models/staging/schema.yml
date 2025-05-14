@@ -3,9 +3,10 @@ version: 2
 sources:
   - name: staging
     database: e2e-football-data
-    schema: dbt_AdityaGurung
+    schema: dbt_AdityaGurung 
     tables:
       - name: data_all
+
 
 models:
   - name: fact_football_data
