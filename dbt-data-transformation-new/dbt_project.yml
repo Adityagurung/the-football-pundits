@@ -3,7 +3,7 @@ version: '1.0.0'
 config-version: 2
 
 
-profile: 'user'
+profile: 'default'
 
 vars:
   source_schema: "{{ 'capstone_dataset' if target.name == 'prod' else 'dbt_AGurung' }}"
@@ -24,4 +24,3 @@ clean-targets:
 models:
   dbt_e2e_football_data:
       +materialized: table
-      +schema: dbt_agurung  # Force models into this schema
