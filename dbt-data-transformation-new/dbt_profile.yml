@@ -1,9 +1,18 @@
 default:
-  target: prod
+  target: dev  # Default to dev for safety
   outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: winter-pivot-457709-k5
+      dataset: dbt_AGurung  # Your personal dev dataset
+      keyfile: C:\\Users\\Adi\\.gc\\gcp_service_capstone.json
+      threads: 1  # Optional: Reduces concurrency for safety
+
     prod:
       type: bigquery
       method: service-account
-      project: winter-pivot-457709-k5 
-      dataset: dbt_AdityaGurung
+      project: winter-pivot-457709-k5
+      dataset: capstone_dataset  # Production dataset
       keyfile: C:\\Users\\Adi\\.gc\\gcp_service_capstone.json
+      threads: 1
