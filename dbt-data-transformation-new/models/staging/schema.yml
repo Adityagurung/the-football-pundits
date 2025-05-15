@@ -3,13 +3,12 @@ version: 2
 sources:
   - name: staging
     database: winter-pivot-457709-k5
-    schema: capstone_dataset 
+    schema: capstone_dataset
     tables:
       - name: data_all
-
 
 models:
   - name: fact_football_data
     description: "Filtered first-tier appearances for the 5 major European leagues"
     config:
-      schema: dbt_agurung  # Schema inside capstone_dataset
+      schema: dbt_AGurung # Schema inside capstone_dataset
