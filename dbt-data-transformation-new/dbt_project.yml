@@ -23,6 +23,5 @@ clean-targets:
 
 models:
   dbt_e2e_football_data:
-    staging:
       +materialized: table
       +schema: dbt_agurung  # Force models into this schema
