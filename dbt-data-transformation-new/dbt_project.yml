@@ -1,0 +1,27 @@
+name: 'dbt_e2e_football_data'
+version: '1.0.0'
+config-version: 2
+
+
+profile: 'user'
+
+vars:
+  source_schema: "{{ 'capstone_dataset' if target.name == 'prod' else 'dbt_AGurung' }}"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+packages-install-path: "dbt_packages"
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_e2e_football_data:
+    staging:
+      +materialized: table
