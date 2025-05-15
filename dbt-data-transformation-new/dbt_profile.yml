@@ -1,18 +1,20 @@
+# dbt_profiles.yml
 user:
-  target: dev  # Default to dev for safety
+  target: dev
   outputs:
     dev:
       type: bigquery
       method: service-account
       project: winter-pivot-457709-k5
-      dataset: dbt_AGurung  # Your personal dev dataset
+      dataset: capstone_dataset  # Parent dataset
+      schema: dbt_agurung        # Schema inside the dataset
       keyfile: C:\\Users\\Adi\\.gc\\gcp_service_capstone.json
-      threads: 1  # Optional: Reduces concurrency for safety
+
 
     prod:
       type: bigquery
       method: service-account
       project: winter-pivot-457709-k5
-      dataset: capstone_dataset  # Production dataset
+      dataset: capstone_dataset  # Same parent dataset
+      schema: prod               # Optional: Separate schema for prod
       keyfile: C:\\Users\\Adi\\.gc\\gcp_service_capstone.json
-      threads: 1
