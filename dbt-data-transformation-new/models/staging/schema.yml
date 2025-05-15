@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: staging
     database: winter-pivot-457709-k5
-    schema: dbt_AdityaGurung 
+    schema: capstone_dataset 
     tables:
       - name: data_all
 
