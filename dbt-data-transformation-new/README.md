@@ -9,7 +9,7 @@ Pre-requisites: [Orchestrate raw data into GCS bucket using Mage](../mage-orches
 1. Setup dbt developer account at https://cloud.getdbt.com/
 2. Follow the instructions [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/04-analytics-engineering/dbt_cloud_setup.md) to create a dbt project.
 3. Create project with:
-    * project name: `dbt-e2e-football-data`
+    * project name: `dbt_e2e_football_data`
     * project sub-directory: `dbt-data-transformation`
     * repository: `git@github.com:Adityagurung/the-football-pundits.git`
     * BigQuery connection: `gcp_service_capstone.json` (same service account as terraform resources)
