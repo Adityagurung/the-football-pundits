@@ -1,4 +1,7 @@
-{{ config(materialized='table') }}
+{{ config(
+    materialized='table',
+    alias='prod' if target.name == 'prod' else 'fact_football_data' 
+) }}
 
 with source as (
   select * from {{ source('staging', 'data_all') }}

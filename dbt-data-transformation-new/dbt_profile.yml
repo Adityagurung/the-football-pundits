@@ -1,9 +1,0 @@
-default:
-  target: prod
-  outputs:
-    prod:
-      type: bigquery
-      method: service-account
-      project: winter-pivot-457709-k5 
-      dataset: dbt_AdityaGurung
-      keyfile: C:\\Users\\Adi\\.gc\\gcp_service_capstone.json
