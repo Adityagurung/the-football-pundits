@@ -20,7 +20,7 @@ Pre-requisites: [Orchestrate raw data into GCS bucket using Mage](../mage-orches
 
 1. Create dbt model using [schema.yml](./models/staging/schema.yml) and [fact_football_data.sql](./models/staging/fact_football_data.sql)
 2. Filter the data to first-tier domestic leagues in Germany, Spain, England, France and Italy.
-3. `dbt build` to create the table: `Project_ID.capstone_datalake.dbt_AGurung.fact_football` inside BigQuery data warehouse.
+3. `dbt build` to create the table: `your_root_container.dbt_AGurung.fact_football` inside BigQuery data warehouse.
 4. Deploy a Nightly production that creates the table `prod`
 
 A successful deployment of **Nightly**.
