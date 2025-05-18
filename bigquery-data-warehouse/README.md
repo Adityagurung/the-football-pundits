@@ -33,4 +33,4 @@ SELECT * FROM `winter-pivot-457709-k5.prod_target.fact_football_data`;
 
 **Final list of external/materialised tables created on BigQuery**
 
-![alt text](bigquery_tables_final-1.png)
+![alt text](bigquery_tables_final.png)
