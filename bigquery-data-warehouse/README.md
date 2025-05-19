@@ -6,9 +6,21 @@ Pre-requisites: [Production processed materialised table `e2e-data-pipeline-caps
 
 ## Queries
 
-We use the SQL queries in this folder to create two tables:
+We use the SQL queries in this folder to create three tables:
+* `data_all`: to merge competitions and appearances schema into one table
 * `fact_football_data_partitioned`: partitioned on date
 * `fact_football_data_partitioned_clustered`: partitioned on data and clustered by player_id
+
+### Query to merge two different table into one table using common attribute
+
+```sql
+CREATE OR REPLACE TABLE `winter-pivot-457709-k5.capstone_dataset.data_all` AS
+SELECT
+  *
+FROM `winter-pivot-457709-k5.capstone_dataset.appearances`
+LEFT JOIN `winter-pivot-457709-k5.capstone_dataset.competitions`
+USING (competition_id);
+```
 
 ### Partitioning
 
