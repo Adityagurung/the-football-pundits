@@ -25,7 +25,6 @@ USING (competition_id);
 ### Partitioning
 
 ```sql
--- Creating a paritioned table
 CREATE OR REPLACE TABLE `winter-pivot-457709-k5.prod_target.fact_football_data_partitioned`
 PARTITION BY DATE(date) AS
 SELECT * FROM `winter-pivot-457709-k5.prod_target.fact_football_data`;
@@ -34,7 +33,6 @@ SELECT * FROM `winter-pivot-457709-k5.prod_target.fact_football_data`;
 ### Partitioning and clustering
 
 ```sql
--- Creating a paritioned and clustered table
 CREATE OR REPLACE TABLE `winter-pivot-457709-k5.prod_target.fact_football_data_partitioned_clustered`
 PARTITION BY DATE(date)
 CLUSTER BY player_id AS
