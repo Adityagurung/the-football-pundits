@@ -6,7 +6,9 @@ __pycache__/
 
 
 # vs code files
+
 *.vscode/
+.vscode
 
 # Local .terraform directories
 
