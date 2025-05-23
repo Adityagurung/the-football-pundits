@@ -81,7 +81,8 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 
 8. **Build dashboard:** Visualise player and league performance using GCP Looker Studio, for some KPIs related to goal contributions and disciplinary records
 
-![Pipeline](workflow-e2e-data-pipeline.png)
+![alt text](e2e_football_data_workflow.png)
+
 
 ## [Visualisation/Dashboard](#visualisationdashboard)
 
