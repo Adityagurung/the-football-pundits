@@ -86,7 +86,7 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 
 ## [Visualisation/Dashboard](#visualisationdashboard)
 
-# Place holder Looker link:
+# Place holder Looker link: https://app.powerbi.com/links/pOuedtK5r7?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
 
 The dashboard consists of three tiles:
 1. Tile #1: Players Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
