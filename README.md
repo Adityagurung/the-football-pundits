@@ -1,6 +1,6 @@
 # Football Data: Tracking player/league performance ⚽️
 
-![Alt Text](Power_BI visualisation/the_football_pundits.png)
+![alt text](<Power_BI visualisation/the_football_pundits.png>)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -81,7 +81,7 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 
 8. **Build dashboard:** Visualise player and league performance using GCP Looker Studio, for some KPIs related to goal contributions and disciplinary records
 
-![alt text](e2e_football_data_workflow-1.png)
+![alt text](e2e_football_data_workflow.PNG)
 
 
 ## [Visualisation/Dashboard](#visualisationdashboard)
