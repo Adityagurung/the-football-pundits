@@ -1,6 +1,6 @@
 # Football Data: Tracking player/league performance ⚽️
 
-![Looker Report](<./looker-data-visualisation/looker_report.png>)
+![PowerBI Report](<.Power_BI visualisation/the_football_pundits.png>)
 
 ## Table of Contents
 - [Introduction](#introduction)
