@@ -1,7 +1,8 @@
 # Football Data: Tracking player/league performance ⚽️
 
-![PowerBI Report](<.Power_BI visualisation/the_football_pundits.png>)
+![alt text]def [the_football_pundits.png]
 
+Power_BI visualisation\the_football_pundits.png
 ## Table of Contents
 - [Introduction](#introduction)
     - [Background and Motivation](#background-and-motivation)
@@ -110,3 +111,5 @@ This project is licensed under the [MIT License](./LICENSE).
 * [Alexey Grigorev](https://github.com/alexeygrigorev)
 * [DataTalks.Club](https://datatalks.club/)
 * [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets)
+
+[def]: the_football_pundits.png
