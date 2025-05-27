@@ -1,8 +1,7 @@
 # Football Data: Tracking player/league performance ⚽️
 
-![alt text]def [the_football_pundits.png]
+![Alt Text](Power_BI visualisation/the_football_pundits.png)
 
-Power_BI visualisation\the_football_pundits.png
 ## Table of Contents
 - [Introduction](#introduction)
     - [Background and Motivation](#background-and-motivation)
