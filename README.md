@@ -1,4 +1,4 @@
-# Football Data: Tracking player/league performance ⚽️
+# Football Data: Teams and Players statistics  ⚽️
 
 ![alt text](<Power_BI visualisation/the_football_pundits.png>)
 
@@ -23,11 +23,11 @@
 
 In the realm of professional football, the quest for competitive advantage hinges on precise insights derived from data. Recognizing this, the project undertakes the task of systematically tracking and analyzing player contributions across major European leagues. The motivation behind this endeavor lies in the necessity to discern patterns, trends, and outliers in player performance metrics, thereby enabling clubs to optimize recruitment strategies, tactical approaches, and player development pathways. Additionally, assessing league-level metrics offers a broader context for evaluating the relative strengths and weaknesses of different footballing competitions. This contributes to a more nuanced understanding of the sport's landscape.
 
-> This project aims to provide a comprehensive analysis of player performance within the top five European football leagues, coupled with an assessment of league performance metrics. Leveraging key performance indicators (KPIs) such as goals, assists, and disciplinary records, the dashboard offers a data-driven approach to understanding the dynamics of football at both individual and league-wide levels. By synthesizing diverse data points, this initiative facilitates informed decision-making for stakeholders ranging from club managers to sports analysts.
+> This project aims to provide a comprehensive analysis of teams and player performance within the top 6 first class tier 1 football leagues in the world from 2020 to 2025, coupled with an assessment of teams performance metrics. Leveraging key performance indicators (KPIs) such as goals, assists, and disciplinary records, the dashboard offers a data-driven approach to understanding the dynamics of football at both individual and league-wide levels. By synthesizing diverse data points, this initiative facilitates informed decision-making for stakeholders ranging from club managers, team scouts to sports analysts.
 
 ## [Data sources](#data-sources)
 
-The raw data for our project is football data scraped from the [Transfermarkt](https://en.wikipedia.org/wiki/Transfermarkt) website. The dataset is composed of multiple CSV files with information on competitions, games, clubs, players and appearances that is automatically updated once a week. Each file contains the attributes of the entity and the IDs that can be used to join them together. The dataset is available on [Kaggle](https://www.kaggle.com/datasets/davidcariboo/player-scores) and this is where we download the data from using the **Kaggle API** to our github repository folder `data/`. For details about the dataset, check out [our instructions](./data/README.md) or the [Kaggle dataset page](https://www.kaggle.com/datasets/davidcariboo/player-scores). 
+The raw data for our project is football data scraped from the [Transfermarkt](https://en.wikipedia.org/wiki/Transfermarkt) website. The dataset is composed of multiple CSV files with information on competitions, games, clubs, players, player valuations and appearances that is automatically updated once a week. Each file contains the attributes of the entity and the IDs that can be used to join them together. The dataset is available on [Kaggle](https://www.kaggle.com/datasets/davidcariboo/player-scores) and this is where we download the data from using the **Kaggle API** to our github repository folder `data/`. For details about the dataset, check out [our instructions](./data/README.md) or the [Kaggle dataset page](https://www.kaggle.com/datasets/davidcariboo/player-scores). 
 
 ## [Objectives](#objectives)
 
@@ -38,13 +38,13 @@ The key objectives for our project are:
 
 3. Transform the external table into meaningful materialised tables/views in the warehouse that helps us track key metrics and performance indicators
 
-4. Visualise these KPIs and analyse the player/league performances on a dashboard
+4. Visualise these KPIs and analyse the player/teams/league performances on a dashboard
 
 # [DATA PIPELINE](#data-pipeline)
 
-[⚠️ This Google Project is created on GCP trial account that will expires on 23 July 2025
+⚠️ This Google Project is created on GCP trial account that will get expire on 23 July 2025 ⚠️
 
-For achieving the objectives listed above, we build an end-to-end data pipeline, starting from the raw Transfermarkt data on Kaggle, and ending with a Looker dashboard that seeks to shed some insights.
+For achieving the objectives listed above, we build an end-to-end data pipeline, starting from the raw Transfermarkt data on Kaggle, and ending with a Power BI dashboard that seeks to shed some insights.
 
 ## [Tools/ Resources Used](#tools-resources-used)
 
@@ -53,7 +53,7 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 3. GCP Cloud Storage
 4. GCP BigQuery
 5. GCP Dataproc
-6. GCP Looker Studio
+6. Power BI
 7. Docker/docker-compose
 9. Mage
 10. DBT cloud
@@ -79,18 +79,19 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 
 7. **Partition and cluster data inside warehouse:** based on the date and player_id respectively, thus creating partitioned and clustered materialised tables
 
-8. **Build dashboard:** Visualise player and league performance using GCP Looker Studio, for some KPIs related to goal contributions and disciplinary records
+8. **Build dashboard:** Visualise player and league performance using Power BI, for some KPIs related to goal contributions and disciplinary records
 
 ![alt text](e2e_football_data_workflow.PNG)
 
 
 ## [Visualisation/Dashboard](#visualisationdashboard)
-https://app.powerbi.com/links/pOuedtK5r7?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
+Link to Power BI workspace - https://app.powerbi.com/links/pOuedtK5r7?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
 
-The dashboard consists of three tiles:
-1. Tile #1: Players Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
-2. Tile #2: League Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
-3. Tile #3: Relative Performance between the leagues: visualised as a donut chart across different KPIs
+The dashboard consists of 6 visualisation charts:
+1. chart #1: Players Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
+2. chart #2: League Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
+3. chart #3: Relative Performance between the leagues: visualised as a donut chart across different KPIs
+4. 
 
 # [Follow-up Work](#follow-up-work)
 
