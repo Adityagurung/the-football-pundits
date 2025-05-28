@@ -88,10 +88,15 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 Link to Power BI workspace - https://app.powerbi.com/links/pOuedtK5r7?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
 
 The dashboard consists of 6 visualisation charts:
-1. chart #1: Players Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
-2. chart #2: League Statistics: goal contributions (goals/assists), disciplinary records (yellow/red cards)
-3. chart #3: Relative Performance between the leagues: visualised as a donut chart across different KPIs
-4. 
+
+Data is collected from 2020-2025 mid year for respective 6 leagues - Bundesliga, Eredivisie, Laliga, Ligue-1, Premier-League, Serie-a that is tier first class league in Germany, Netherlands, Spain, Italy and England(UK)
+
+1. chart #1: League Statistics: Average goals per game by league in each year.
+2. chart #2: League Statistics: Per country per league average of goals, win percentage and total Matchpoints
+3. chart #3: Teams Statistics: Top 10 clubs from each league matches played, market value and winning percentage.
+4. chart #4: Player Statistics: Top 10 players from each club wth goal contributions (goals/assists), disciplinary records (yellow/red cards)
+5. chart #5: Year Slicer: To adjust between the 2020-2025 with relation with other charts
+6. chart #6: League Slicer: To filter by League name with relation with other charts
 
 # [Follow-up Work](#follow-up-work)
 
@@ -110,5 +115,3 @@ This project is licensed under the [MIT License](./LICENSE).
 * [Alexey Grigorev](https://github.com/alexeygrigorev)
 * [DataTalks.Club](https://datatalks.club/)
 * [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets)
-
-[def]: the_football_pundits.png
