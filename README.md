@@ -1,4 +1,4 @@
-# Football Data: Teams and Players Statistics  ⚽️
+# The Football Pundits: Decoding the beautiful game ⚽️
 
 ![alt text](<Power_BI visualisation/the_football_pundits.png>)
 
@@ -23,7 +23,7 @@
 
 In the realm of professional football, the quest for competitive advantage hinges on precise insights derived from data. Recognizing this, the project undertakes the task of systematically tracking and analyzing player contributions across major European leagues. The motivation behind this endeavor lies in the necessity to discern patterns, trends, and outliers in player performance metrics, thereby enabling clubs to optimize recruitment strategies, tactical approaches, and player development pathways. Additionally, assessing league-level metrics offers a broader context for evaluating the relative strengths and weaknesses of different footballing competitions. This contributes to a more nuanced understanding of the sport's landscape.
 
-> This project aims to provide a comprehensive analysis of teams and player performance within the top 6 first class division football leagues in the world from year 2020 to 2025, coupled with an assessment of teams performance metrics. Leveraging key performance indicators (KPIs) such as goals, assists, and disciplinary records, the dashboard offers a data-driven approach to understanding the dynamics of football at both individual and league-wide levels. By synthesizing diverse data points, this initiative facilitates informed decision-making for stakeholders ranging from club managers, team scouts to sports analysts.
+> This project aims to provide a comprehensive analysis of teams and player performance within the top 6 first class division football leagues in the world from 2020 to 2025, coupled with an assessment of teams performance metrics. Leveraging key performance indicators (KPIs) such as goals, assists, and disciplinary records, the dashboard offers a data-driven approach to understanding the dynamics of football at both individual and league-wide levels. By synthesizing diverse data points, this initiative facilitates informed decision-making for stakeholders ranging from club managers, team scouts to sports analysts.
 
 ## [Data sources](#data-sources)
 
