@@ -55,7 +55,7 @@ For achieving the objectives listed above, we build an end-to-end data pipeline,
 5. GCP Dataproc
 6. Power BI
 7. Docker/docker-compose
-9. Mage
+9. Mage.ai
 10. DBT cloud
 11. Spark/pySpark
 12. git/git lfs
@@ -91,12 +91,23 @@ The dashboard consists of 6 visualisation charts:
 
 Data is collected from 2020-2025 mid year for respective 6 leagues - Bundesliga, Eredivisie, Laliga, Ligue-1, Premier-League, Serie-a that is tier first class league in Germany, Netherlands, Spain, Italy and England(UK)
 
-1. chart #1: League Statistics: Average goals per game by league in each year.
-2. chart #2: League Statistics: Per country per league average of goals, win percentage and total Matchpoints
-3. chart #3: Teams Statistics: Top 10 clubs from each league matches played, market value and winning percentage.
-4. chart #4: Player Statistics: Top 10 players from each club wth goal contributions (goals/assists), disciplinary records (yellow/red cards)
-5. chart #5: Year Slicer: To adjust between the 2020-2025 with relation with other charts
-6. chart #6: League Slicer: To filter by League name with relation with other charts
+1. Chart 1: League Performance Over Time
+Displays the average goals per game for each league, broken down year by year, to analyze scoring trends over time.
+
+2. Chart 2: Country-wise League Summary
+Compares leagues within each country, showing their average goals per match, win percentage, and total match points, to provide a multi-metric performance overview that can be drill down to clubs.
+
+3. Chart 3: Top Clubs by League - Team Stats
+Highlights the top 10 clubs from each league based on matches played, market value, and win percentage, offering insight into the most dominant and valuable teams.
+
+4. Chart 4: Top Players by Club - Player Stats
+Displays the top 10 players from each club, focusing on goal contributions (goals + assists) and disciplinary records (yellow/red cards), allowing for performance and behavior comparison.
+
+5. Chart 5: Year Slicer (2020–2025)
+An interactive year slicer that allows users to filter data across all charts based on a selected year within the 2020–2025 range.
+
+6. Chart 6: League Slicer(Bundesliga, Eredivisie, Laliga, Ligue-1, Premier-League, Serie-a)
+A league filter that lets users dynamically update all visualizations based on the selected league, for focused analysis.
 
 # [Follow-up Work](#follow-up-work)
 
