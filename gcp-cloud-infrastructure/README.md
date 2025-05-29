@@ -180,14 +180,14 @@ First, one needs to create an SSH key pair between the VM and github.
 
 ```bash
 $~> git clone git@github.com:Adityagurung/the-football-pundits.git
-$~> cd e2e-data-pipeline
+$~> cd the-football-pundits
 ```
 
 ## Setup conda environment for testing
 
 ```bash
 conda create --name e2e-data-pipeline python=3.10
-conda activate e2e-data-pipeline
+conda activate the-football-pundits
 conda install numpy pandas scikit-learn seaborn jupyter
 ```
 

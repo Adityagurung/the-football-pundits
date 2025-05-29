@@ -19,7 +19,7 @@ Pre-requisites:
 2. Navigate to the orchestrator directory:
 
     ```bash
-    cd e2e-data-pipeline/orchestrator-mage
+    cd the-football-pundits/orchestrator-mage
     ```
 
 3. Rename `dev.env` as `.env` — this will _ensure_ the file is not committed to Git by accident, since it _will_ contain credentials in the future.
@@ -50,9 +50,7 @@ and exports them to our GCS bucket `capstone_datalake`. In order to do that, we 
 2. Run@Once to load and export `appearances.parquet` and `competitions.parquet` to `capstone_datalake/raw`.
 
 **The pipeline looks like this:**
-
-![alt text](etl_github_gcs_raw_data.png)
+![alt text](<mage ETL pipeline blocks run.jpg>)
 
 **Datalake looks this:**
-
-![alt text](<datalake.png>)
+![alt text](capstone_datalake.jpg)
