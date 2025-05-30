@@ -116,7 +116,7 @@ To achieve the project objectives, we have built a complete end-to-end data pipe
 
 8. **Build Dashboard (Power BI)** – Create interactive visualizations to analyze player and league performance using key metrics such as goal contributions and disciplinary records.
 
-![alt text](e2e_football_data_workflow.PNG)
+  ![alt text](e2e_football_data_workflow.PNG)
 
 
 ## 📊 [Visualisation/Dashboard](#visualisationdashboard)
