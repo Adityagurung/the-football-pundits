@@ -21,65 +21,92 @@
 
 ## [Background and Motivation](#background-and-motivation)
 
-In the realm of professional football, the quest for competitive advantage hinges on precise insights derived from data. Recognizing this, the project undertakes the task of systematically tracking and analyzing player contributions across major European leagues. The motivation behind this endeavor lies in the necessity to discern patterns, trends, and outliers in player performance metrics, thereby enabling clubs to optimize recruitment strategies, tactical approaches, and player development pathways. Additionally, assessing league-level metrics offers a broader context for evaluating the relative strengths and weaknesses of different footballing competitions. This contributes to a more nuanced understanding of the sport's landscape.
+In professional football, gaining a competitive edge increasingly relies on actionable insights derived from data. This project addresses that need by systematically monitoring and analyzing player contributions across Europe’s top leagues. The core objective is to identify patterns, trends, and anomalies in performance metrics—insights that can guide clubs in refining their recruitment strategies, tactical planning, and player development initiatives. Furthermore, analyzing league-level statistics provides valuable context for comparing the relative strengths and weaknesses of various football competitions, enriching our overall understanding of the sport.
 
-> This project aims to provide a comprehensive analysis of teams and player performance within the top 6 first class division football leagues in the world from 2020 to 2025, coupled with an assessment of teams performance metrics. Leveraging key performance indicators (KPIs) such as goals, assists, and disciplinary records, the dashboard offers a data-driven approach to understanding the dynamics of football at both individual and league-wide levels. By synthesizing diverse data points, this initiative facilitates informed decision-making for stakeholders ranging from club managers, team scouts to sports analysts.
+> This initiative delivers an in-depth evaluation of team and player performances across the top six first-division football leagues worldwide, covering the period from 2020 to 2025. Using key performance indicators (KPIs) such as goals, assists, and disciplinary actions, the project presents a comprehensive, data-driven dashboard. By integrating multiple performance metrics, it supports informed decision-making for a wide range of stakeholders, including club managers, scouts, and sports analysts.
 
 ## [Data sources](#data-sources)
 
-The raw data for our project is football data scraped from the [Transfermarkt](https://en.wikipedia.org/wiki/Transfermarkt) website. The dataset is composed of multiple CSV files with information on competitions, games, clubs, players, player valuations and appearances that is automatically updated once a week. Each file contains the attributes of the entity and the IDs that can be used to join them together. The dataset is available on [Kaggle](https://www.kaggle.com/datasets/davidcariboo/player-scores) and this is where we download the data from using the **Kaggle API** to our github repository folder `data/`. For details about the dataset, check out [our instructions](./data/README.md) or the [Kaggle dataset page](https://www.kaggle.com/datasets/davidcariboo/player-scores). 
+The raw data for this project comes from football statistics originally scraped from the [Transfermarkt](https://en.wikipedia.org/wiki/Transfermarkt) website. The dataset consists of multiple CSV files containing information on competitions, matches, clubs, players, player valuations, and appearances. It is automatically updated on a weekly basis. Each file includes attributes specific to an entity, along with unique IDs that allow the files to be joined together for analysis.
+
+We access this dataset through [Kaggle](https://www.kaggle.com/datasets/davidcariboo/player-scores), downloading it directly into the `data/` folder of our GitHub repository using the **Kaggle API**. For more details about the dataset, refer to [our instructions](./data/README.md) or visit the [Kaggle dataset page](https://www.kaggle.com/datasets/davidcariboo/player-scores).
+
 
 ## [Objectives](#objectives)
 
 The key objectives for our project are:
-1. Extract the raw Transfermarkt football datasets, transform it to a structured format and store it in a data lake
+Certainly! Here's a clearer, more professional rewrite of your project objectives:
 
-2. Process the relevant datasets, merge them into a single source of truth and export it as an external table to a data warehouse, leveraging orchestrators and distributed computing for the heavy-lifting
+### Key Objectives of the Project:
 
-3. Transform the external table into meaningful materialised tables/views in the warehouse that helps us track key metrics and performance indicators
+1. **Data Extraction and Structuring**
+   Extract raw football datasets from Transfermarkt, transform them into a clean, structured format, and store them in a centralized data lake for further processing.
 
-4. Visualise these KPIs and analyse the player/teams/league performances on a dashboard
+2. **Data Processing and Integration**
+   Process and integrate relevant datasets to create a unified, reliable source of truth. This step involves exporting the consolidated data as an external table into a data warehouse, utilizing orchestration tools and distributed computing frameworks to handle large-scale transformations efficiently.
 
-# [DATA PIPELINE](#data-pipeline)
+3. **Data Modeling and Transformation**
+   Convert the external table into materialized views or tables within the data warehouse. These tables are designed to highlight key performance indicators (KPIs) and metrics essential for tracking player, team, and league performance.
 
-⚠️ This Google Project is created on GCP trial account that will get expire on 23 July 2025 ⚠️
+4. **Data Visualization and Analysis**
+   Build interactive dashboards to visualize the KPIs and perform in-depth analysis of players, clubs, and leagues—enabling actionable insights and data-driven decision-making.
 
-For achieving the objectives listed above, we build an end-to-end data pipeline, starting from the raw Transfermarkt data on Kaggle, and ending with a Power BI dashboard that seeks to shed some insights.
+## [DATA PIPELINE](#data-pipeline)
+
+⚠️ **Note:** This Google Cloud Project is running on a GCP trial account, which is set to expire on **July 23, 2025**. ⚠️
+
+To achieve the project objectives, we have built a complete end-to-end data pipeline. The pipeline begins with raw football data sourced from Kaggle (originally scraped from Transfermarkt) and culminates in a Power BI dashboard designed to deliver actionable insights on players, teams, and leagues.
 
 ## [Tools/ Resources Used](#tools-resources-used)
 
-1. Terraform
-2. GCP Compute Engine virtual machine
-3. GCP Cloud Storage
-4. GCP BigQuery
-5. GCP Dataproc
-6. Power BI
-7. Docker/docker-compose
-9. Mage.ai
-10. DBT cloud
-11. Spark/pySpark
-12. git/git lfs
-13. Kaggle API
+1. **Terraform** – Used to provision and manage GCP infrastructure as code in a consistent and repeatable manner.
 
-## [Methodology/Reproducibility](#methodologyreproducibility)
+2. **GCP Compute Engine virtual machine** – Served as the main processing node for running data pipeline components and orchestration tools.
 
-*Reproducibility of this project can be ensured by following the instructions for each step.*
+3. **GCP Cloud Storage** – Acted as the data lake for storing raw and intermediate datasets extracted from Kaggle.
 
-1. **Download Data:** Download raw Transfermarkt football data related to appearances and competitions, from Kaggle using the API [[Instructions]](./data/README.md)
+4. **GCP BigQuery** – Functioned as the data warehouse for storing transformed datasets and running analytical queries.
 
-2. **Setup Environment:** Create Google cloud project, service accounts, SSH access, compute engine VM and the VM environment to run the rest of the pipeline [[Instructions]](./gcp-cloud-infrastructure/README.md)
+5. **GCP Dataproc** – Enabled distributed data processing using Apache Spark for efficient transformation of large datasets.
 
-3. **Infrasturcture as Code:** Use Terraform to create GCP resources (GCS bucket, BQ dataset, Dataproc cluster) [[Instructions]](./terraform-iac/README.md)
+6. **Power BI** – Used to build interactive dashboards for visualizing KPIs and analyzing player, team, and league performance.
 
-4. **Containerised orchestration of raw data:** Using Mage as an orchestrator, build an ETL pipeline that loads the raw data, structures it and exports to the GCS bucket. [[Instructions]](./mage-orchestrator/README.md)
+7. **Docker/docker-compose** – Containerized project components to ensure consistent environments for development, orchestration, and deployment.
 
-5. **Distributed computing on processed data:** Transform the two processed datasets in the bucket into a single dataset, using pyspark and GCP Dataproc cluster, and export it as an external table in BigQuery [[Instructions]](./spark-distributed-computing/README.md)
+8. **Mage.ai** – Served as the data orchestration tool to automate, schedule, and monitor pipeline tasks from extraction to transformation.
 
-6. **Transformation inside data warehouse:** Build, stage and deploy a transformation production using dbt, that takes the external table from BigQuery and creates materialised tables which just consists of data corresponding to the top-five European leagues [[Instructions]](./dbt-data-transformation/README.md)
+9. **DBT Cloud** – Used to define, test, and manage SQL-based data transformations and materialized views in BigQuery.
 
-7. **Partition and cluster data inside warehouse:** based on the date and player_id respectively, thus creating partitioned and clustered materialised tables
+10. **Spark/pySpark** – Handled large-scale data transformations and processing tasks within the Dataproc cluster.
 
-8. **Build dashboard:** Visualise player and league performance using Power BI, for some KPIs related to goal contributions and disciplinary records
+11. **git/git lfs** – Managed source code versioning and efficiently tracked large files such as datasets and notebooks.
+
+12. **Kaggle API** – Automated the download of raw football datasets from Kaggle into the project’s `data/` folder.
+
+## **🔁 Reproducibility**
+*Reproducibility of this project can be ensured by following the instructions for each step below.*
+
+1. **Download Data** – Download raw football data on player appearances and competitions from Kaggle using the Kaggle API.
+   👉 [Instructions](./data/README.md)
+
+2. **Set Up Environment** – Configure your Google Cloud environment, including project setup, service accounts, SSH access, and a Compute Engine VM.
+   👉 [Instructions](./gcp-cloud-infrastructure/README.md)
+
+3. **Infrastructure as Code (Terraform)** – Use Terraform to provision essential GCP resources like a Cloud Storage bucket, BigQuery dataset, and Dataproc cluster.
+   👉 [Instructions](./terraform-iac/README.md)
+
+4. **Containerized Data Orchestration (Mage.ai)** – Use Mage as an orchestration tool to build an ETL pipeline that structures raw data and exports it to Cloud Storage.
+   👉 [Instructions](./mage-orchestrator/README.md)
+
+5. **Distributed Data Processing (PySpark + Dataproc)** – Use PySpark on a Dataproc cluster to transform structured data into a unified dataset and export it to BigQuery as an external table.
+   👉 [Instructions](./spark-distributed-computing/README.md)
+
+6. **Data Transformation in BigQuery (dbt)** – Use dbt to transform the external table into materialized tables focusing on data from the top five European leagues.
+   👉 [Instructions](./dbt-data-transformation/README.md)
+
+7. **Partitioning and Clustering** – Optimize BigQuery materialized tables by partitioning data by date and clustering by `player_id` for improved performance and cost-efficiency.
+
+8. **Build Dashboard (Power BI)** – Create interactive visualizations to analyze player and league performance using key metrics such as goal contributions and disciplinary records.
 
 ![alt text](e2e_football_data_workflow.PNG)
 
@@ -109,20 +136,32 @@ An interactive year slicer that allows users to filter data across all charts ba
 6. Chart 6: League Slicer(Bundesliga, Eredivisie, Laliga, Ligue-1, Premier-League, Serie-a)
 A league filter that lets users dynamically update all visualizations based on the selected league, for focused analysis.
 
-# [Follow-up Work](#follow-up-work)
+Here’s a polished and professional version of the final sections of your README with improved formatting, clarity, and consistency:
 
-* Add tests
-* Use make
-* Add CI/CD pipeline
-* Build automated pipeline
+---
 
-# [Contributors](#contributors)
-Aditya Gurung, aditya.grng@gmail.com
+## 🔄 [Follow-up Work](#follow-up-work)
 
-# [License](#license)
-This project is licensed under the [MIT License](./LICENSE).
+Planned improvements and future enhancements for the project:
 
-# [Acknowledgments](#acknowledgments)
+* ✅ Add automated tests to validate data transformations and pipeline reliability
+* 🛠 Integrate `make` for simplified task management and reproducibility
+* 🚀 Set up a CI/CD pipeline to automate testing, deployment, and updates
+* 🔁 Build a fully automated end-to-end data pipeline from ingestion to visualization
+
+## 👥 [Contributors](#contributors)
+
+**Aditya Gurung**
+📧 [aditya.grng@gmail.com](mailto:aditya.grng@gmail.com)
+
+## 📄 [License](#license)
+
+This project is licensed under the terms of the [MIT License](./LICENSE).
+
+## 🙏 [Acknowledgments](#acknowledgments)
+
+Special thanks to the following individuals and communities for their contributions, inspiration, and datasets:
+
 * [Alexey Grigorev](https://github.com/alexeygrigorev)
 * [DataTalks.Club](https://datatalks.club/)
-* [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets)
+* [transfermarkt-datasets by dcaribou](https://github.com/dcaribou/transfermarkt-datasets)
