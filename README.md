@@ -88,6 +88,8 @@ To achieve the project objectives, we have built a complete end-to-end data pipe
 
 12. **Kaggle API** – Automated the download of raw football datasets from Kaggle into the project’s `data/` folder.
 
+13. **VS Code** - IDE used for development, debugging, running Bash/shell terminal and source version control.
+
 ## **🔁 Reproducibility**
 *Reproducibility of this project can be ensured by following the instructions for each step below.*
 
