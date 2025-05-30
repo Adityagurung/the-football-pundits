@@ -8,7 +8,7 @@
   * Go to: https://console.cloud.google.com/
   * Create a 'New Project':
     * Project number: 1021722663072 
-    * Project ID: `the-football-pundits`
+    * Project ID: `e2e-football-data`
 
 * IAM & Admin --> Service Accounts [Follow instructions in video: [DE Zoomcamp 1.3.2 - Terraform Basics](https://youtu.be/Y2ux7gq3Z0o?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)]
   * Go to: https://console.cloud.google.com/iam-admin/serviceaccounts
@@ -27,7 +27,7 @@
 * **Create SSH Key pair** using the instructions [here](https://cloud.google.com/compute/docs/connect/create-ssh-keys).
   * Local Machine (MacOS): `ssh-keygen -t rsa -f ~/.ssh/gcp -C Adi -b 2048`
   * GCP Compute Engine: **Metadata** &rarr; **SSH Keys** &rarr; add content of (local machine): `cat ~/.ssh/gcp.pub` into SSH Key 1 and save
-* **CREATE INSTANCE** with name `e2e-data-pipeline-capstone-vm` and specifications:
+* **CREATE INSTANCE** with name `e2e-football-data-vm` and specifications:
   * Region/Zone: `europe-north1 (Finland)`/`europe-north1-a` 🚨🚨 SUPER IMPORTANT
   * Machine configuration: `e2-standard-4` (4 vCPU, 2 core, 16GB memory)
   * Boot disk: 30GB Ubuntu 20.04 LTS (x86/64, amd64 focal image built on 2024-03-07)
@@ -58,7 +58,7 @@
     .
     .
     .
-    Adi@the-football-pundits-capstone-vm:~$ 
+    Adi@e2e-football-data-vm:~$ 
     ```
 
 * **Setup local `~/.ssh/config`** with the following content for shortcut:
@@ -110,7 +110,7 @@ Now authenticate:
 
 ```bash
 $~> gcloud auth activate-service-account --key-file $GOOGLE_APPLICATION_CREDENTIALS
-Activated service account credentials for: [terraform-runner@e2e-data-pipeline-capstone.iam.gserviceaccount.com]
+Activated service account credentials for: [terraform-runner@e2e-football-data.iam.gserviceaccount.com]
 ```
 
 ### 2. Anaconda
