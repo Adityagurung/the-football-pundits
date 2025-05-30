@@ -53,7 +53,7 @@ Certainly! Here's a clearer, more professional rewrite of your project objective
    Build interactive dashboards to visualize the KPIs and perform in-depth analysis of players, clubs, and leagues—enabling actionable insights and data-driven decision-making.
 
 
-## 🔄 [DATA PIPELINE](#data-pipeline)
+## 🔄 [E2E Data Pipeline](#e2e-data-pipeline)
 
 ---
 
