@@ -186,8 +186,8 @@ $~> cd the-football-pundits
 ## Setup conda environment for testing
 
 ```bash
-conda create --name e2e-data-pipeline python=3.10
-conda activate the-football-pundits
+conda create --name the-football-data=3.10
+conda activate the-football-data
 conda install numpy pandas scikit-learn seaborn jupyter
 ```
 

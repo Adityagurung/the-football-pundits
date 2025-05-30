@@ -31,9 +31,9 @@ export PYTHONPATH="${SPARK_HOME}/python/lib/py4j-0.10.9.5-src.zip:$PYTHONPATH"
 1. Navigate to `spark` folder in project and create a directory `spark/lib` and navigate to it.
 
 ```
-:~e2e-data-pipeline$ ls cd spark
-:~e2e-data-pipeline/spark$ mkdir lib
-:~e2e-data-pipeline/spark$ cd lib
+:~the-football-pundits$ ls cd spark-distributed-computing // or whatever directory you want inside the spark folder
+:~the-football-pundits/spark-distributed-computing$ mkdir lib 
+:~the-football-pundits/spark-distributed-computing$ cd lib
 ```
 
 2. Download the connector
@@ -82,4 +82,4 @@ Then we create a [python notebook](./processing_data_pyspark_bigquery.py) out of
             --output=capstone_dataset.data_all
     ```
 
-4. Check BigQuery for table: `e2e-data-pipeline-capstone.capstone_dataset.data_all`
+4. Check BigQuery for table: `your_root_container`.capstone_dataset.data_all`
