@@ -2,7 +2,7 @@
 
 ![alt text](<Power_BI visualisation/the_football_pundits.png>)
 
-## 📑 [Table of Contents]
+## 📑 [Table of Contents](#Table_of_Contents)
 
 - [Introduction](#introduction)
     - [Background and Motivation](#background-and-motivation)
@@ -91,7 +91,7 @@ To achieve the project objectives, we have built a complete end-to-end data pipe
 
 13. **VS Code** - IDE used for development, debugging, running bash/shell terminal and source version control.
 
-## **🔁 [Reproducibility]**
+## **🔁 [Reproducibility](#Reproducibility)**
 *Reproducibility of this project can be ensured by following the instructions for each step below.*
 
 1. **Download Data** – Download raw football data on player appearances and competitions from Kaggle using the Kaggle API.
