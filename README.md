@@ -2,7 +2,8 @@
 
 ![alt text](<Power_BI visualisation/the_football_pundits.png>)
 
-## Table of Contents
+## 📑 Table of Contents
+
 - [Introduction](#introduction)
     - [Background and Motivation](#background-and-motivation)
     - [Data sources](#data-sources)
@@ -17,22 +18,22 @@
 - [Acknowledgments](#acknowledgments)
 - [Contributions and Feedback](#contributions-and-feedback)
 
-# [INTRODUCTION](#introduction)
+# 📝 [INTRODUCTION](#introduction)
 
-## [Background and Motivation](#background-and-motivation)
+## 💡 [Background and Motivation](#background-and-motivation)
 
 In professional football, gaining a competitive edge increasingly relies on actionable insights derived from data. This project addresses that need by systematically monitoring and analyzing player contributions across Europe’s top leagues. The core objective is to identify patterns, trends, and anomalies in performance metrics—insights that can guide clubs in refining their recruitment strategies, tactical planning, and player development initiatives. Furthermore, analyzing league-level statistics provides valuable context for comparing the relative strengths and weaknesses of various football competitions, enriching our overall understanding of the sport.
 
 > This initiative delivers an in-depth evaluation of team and player performances across the top six first-division football leagues worldwide, covering the period from 2020 to 2025. Using key performance indicators (KPIs) such as goals, assists, and disciplinary actions, the project presents a comprehensive, data-driven dashboard. By integrating multiple performance metrics, it supports informed decision-making for a wide range of stakeholders, including club managers, scouts, and sports analysts.
 
-## [Data sources](#data-sources)
+## 🛢️ [Data sources](#data-sources)
 
 The raw data for this project comes from football statistics originally scraped from the [Transfermarkt](https://en.wikipedia.org/wiki/Transfermarkt) website. The dataset consists of multiple CSV files containing information on competitions, matches, clubs, players, player valuations, and appearances. It is automatically updated on a weekly basis. Each file includes attributes specific to an entity, along with unique IDs that allow the files to be joined together for analysis.
 
 We access this dataset through [Kaggle](https://www.kaggle.com/datasets/davidcariboo/player-scores), downloading it directly into the `data/` folder of our GitHub repository using the **Kaggle API**. For more details about the dataset, refer to [our instructions](./data/README.md) or visit the [Kaggle dataset page](https://www.kaggle.com/datasets/davidcariboo/player-scores).
 
 
-## [Objectives](#objectives)
+## 🎯 [Objectives](#objectives)
 
 The key objectives for our project are:
 Certainly! Here's a clearer, more professional rewrite of your project objectives:
@@ -52,7 +53,7 @@ Certainly! Here's a clearer, more professional rewrite of your project objective
    Build interactive dashboards to visualize the KPIs and perform in-depth analysis of players, clubs, and leagues—enabling actionable insights and data-driven decision-making.
 
 
-## [DATA PIPELINE](#data-pipeline)
+## 🔄 [DATA PIPELINE](#data-pipeline)
 
 ---
 
@@ -62,7 +63,7 @@ Certainly! Here's a clearer, more professional rewrite of your project objective
 
 To achieve the project objectives, we have built a complete end-to-end data pipeline. The pipeline begins with raw football data sourced from Kaggle (originally scraped from Transfermarkt) and culminates in a Power BI dashboard designed to deliver actionable insights on players, teams, and leagues.
 
-## [Tools/ Resources Used](#tools-resources-used)
+## ⚙️ [Tools/ Resources Used](#tools-resources-used)
 
 1. **Terraform** – Used to provision and manage GCP infrastructure as code in a consistent and repeatable manner.
 
@@ -118,7 +119,7 @@ To achieve the project objectives, we have built a complete end-to-end data pipe
 ![alt text](e2e_football_data_workflow.PNG)
 
 
-## [Visualisation/Dashboard](#visualisationdashboard)
+## 📊 [Visualisation/Dashboard](#visualisationdashboard)
 Link to Power BI workspace - https://app.powerbi.com/links/pOuedtK5r7?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
 
 The dashboard consists of 6 visualisation charts:
