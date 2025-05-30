@@ -69,4 +69,7 @@ game_lineups.csv
 games.csv
 players.csv
 
+
+#ignore files
 mage-orchestrator/e2e-football-data/
+dbt/target

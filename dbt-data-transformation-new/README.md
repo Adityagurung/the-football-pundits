@@ -19,7 +19,7 @@ Pre-requisites: [Orchestrate raw data into GCS bucket using Mage](../mage-orches
 **AIM:** create a dbt model that will keep filter the data for appearances only in the first tiers of the 5 big leagues in Europe: Germany, Spain, England, France and Italy. We also do not need all columns.
 
 1. Create dbt model using [schema.yml](./models/staging/schema.yml) and [fact_football_data.sql](./models/staging/fact_football_data.sql)
-2. Filter the data to first-tier domestic leagues in Germany, Spain, England, France and Italy.
+2. Filter the data to first-tier domestic leagues in Germany, Spain, England(UK), France, Netherlands and Italy.
 3. `dbt build` to create the table: `your_root_container.dbt_AGurung.fact_football` inside BigQuery data warehouse.
 4. Deploy a Nightly production that creates the table `prod`
 
