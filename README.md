@@ -52,8 +52,12 @@ Certainly! Here's a clearer, more professional rewrite of your project objective
    Build interactive dashboards to visualize the KPIs and perform in-depth analysis of players, clubs, and leagues—enabling actionable insights and data-driven decision-making.
 
 ## [DATA PIPELINE](#data-pipeline)
+---
 
-⚠️ **Note:** This Google Cloud Project is running on a GCP trial account, which is set to expire on **July 23, 2025**. ⚠️
+⚠️ **Note:** This project is running on Google Cloud Platform (GCP) and Power BI trial accounts, both of which will expire on **July 23, 2025**. ⚠️
+
+---
+Would you like me to help you add this as a banner or warning section in your README or documentation?
 
 To achieve the project objectives, we have built a complete end-to-end data pipeline. The pipeline begins with raw football data sourced from Kaggle (originally scraped from Transfermarkt) and culminates in a Power BI dashboard designed to deliver actionable insights on players, teams, and leagues.
 
@@ -136,10 +140,6 @@ An interactive year slicer that allows users to filter data across all charts ba
 6. Chart 6: League Slicer(Bundesliga, Eredivisie, Laliga, Ligue-1, Premier-League, Serie-a)
 A league filter that lets users dynamically update all visualizations based on the selected league, for focused analysis.
 
-Here’s a polished and professional version of the final sections of your README with improved formatting, clarity, and consistency:
-
----
-
 ## 🔄 [Follow-up Work](#follow-up-work)
 
 Planned improvements and future enhancements for the project:
@@ -149,7 +149,7 @@ Planned improvements and future enhancements for the project:
 * 🚀 Set up a CI/CD pipeline to automate testing, deployment, and updates
 * 🔁 Build a fully automated end-to-end data pipeline from ingestion to visualization
 
-## 👥 [Contributors](#contributors)
+## 👥 [Contributor](#contributor)
 
 **Aditya Gurung**
 📧 [aditya.grng@gmail.com](mailto:aditya.grng@gmail.com)
