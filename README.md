@@ -9,7 +9,7 @@
     - [Objectives](#objectives)
 - [Data Pipeline](#data-pipeline)
     - [Tools/ Resources Used](#tools-resources-used)
-    - [Methodology/Reproducibility](#methodologyreproducibility)
+    - [Reproducibility](#reproducibility)
     - [Visualisation/Dashboard](#visualisationdashboard)
 - [Follow-up Work](#follow-up-work)
 - [Contributors](#contributors)
