@@ -51,8 +51,10 @@ Certainly! Here's a clearer, more professional rewrite of your project objective
 4. **Data Visualization and Analysis**
    Build interactive dashboards to visualize the KPIs and perform in-depth analysis of players, clubs, and leagues—enabling actionable insights and data-driven decision-making.
 
----
+
 ## [DATA PIPELINE](#data-pipeline)
+
+---
 
 ⚠️ **Note:** This project is running on Google Cloud Platform (GCP) and Power BI trial accounts, both of which will expire on **July 23, 2025**. ⚠️
 
