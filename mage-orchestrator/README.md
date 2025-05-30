@@ -49,8 +49,8 @@ and exports them to our GCS bucket `capstone_datalake`. In order to do that, we 
 
 2. Run@Once to load and export `appearances.parquet` and `competitions.parquet` to `capstone_datalake/raw`.
 
-**The pipeline looks like this:**
+**The pipeline will look similar to this:**
 ![alt text](<mage ETL pipeline blocks run.jpg>)
 
-**Datalake looks this:**
+**Datalake will look similar to this:**
 ![alt text](capstone_datalake.jpg)
