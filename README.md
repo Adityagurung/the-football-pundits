@@ -155,7 +155,7 @@ Planned improvements and future enhancements for the project:
 ## 👥 [Contributor](#contributor)
 
 **Aditya Gurung**
-📧 [aditya.grng@gmail.com](mailto:aditya.grng@gmail.com)
+📧 [aditya.gurung03@outlook.com](mailto:aditya.gurung03@outlook.com)
 
 ## 📄 [License](#license)
 
