@@ -8,7 +8,7 @@
   * Go to: https://console.cloud.google.com/
   * Create a 'New Project':
     * Project number: 1021722663072 
-    * Project ID: `e2e-data-pipeline-capstone`
+    * Project ID: `the-football-pundits`
 
 * IAM & Admin --> Service Accounts [Follow instructions in video: [DE Zoomcamp 1.3.2 - Terraform Basics](https://youtu.be/Y2ux7gq3Z0o?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)]
   * Go to: https://console.cloud.google.com/iam-admin/serviceaccounts
@@ -58,7 +58,7 @@
     .
     .
     .
-    Adi@e2e-data-pipeline-capstone-vm:~$ 
+    Adi@the-football-pundits-capstone-vm:~$ 
     ```
 
 * **Setup local `~/.ssh/config`** with the following content for shortcut:
