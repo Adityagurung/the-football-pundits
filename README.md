@@ -120,7 +120,7 @@ To achieve the project objectives, we have built a complete end-to-end data pipe
 
 
 ## 📊 [Visualization/Dashboard](#visualisationdashboard)
-Link to Power BI workspace - https://app.powerbi.com/links/pOuedtK5r7?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&pbi_source=linkShare
+Link to Power BI Dashboard - https://app.powerbi.com/groups/me/dashboards/db2f08f1-c37f-4bd4-bc99-2890e7688bce?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&experience=power-bi
 
 The dashboard consists of 6 visualisation charts:
 
