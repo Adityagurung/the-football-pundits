@@ -1,7 +1,5 @@
 # The Football Pundits: Decoding the beautiful game ⚽️
 ![alt text](the-football-pundits.gif)
-![alt text](<Power_BI visualisation/the_football_pundits.png>)
-
 ## 📑 [Table of Contents](#Table_of_Contents)
 
 - [Introduction](#introduction)
