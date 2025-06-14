@@ -120,6 +120,8 @@ To achieve the project objectives, we have built a complete end-to-end data pipe
 ## 📊 [Visualization/Dashboard](#visualisationdashboard)
 Link to Power BI Dashboard - https://app.powerbi.com/groups/me/dashboards/db2f08f1-c37f-4bd4-bc99-2890e7688bce?ctid=56c1d497-700b-49cf-8f8d-3dd6b20d522f&experience=power-bi
 
+![alt text](<Power_BI visualisation/the_football_pundits.png>)
+
 The dashboard consists of 6 visualisation charts:
 
 Data is collected from 2020-2025 mid year for respective 6 leagues - Bundesliga, Eredivisie, Laliga, Ligue-1, Premier-League, Serie-a of first class/division league in Germany, Netherlands, Spain, France, Italy and England(UK)
