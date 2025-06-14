@@ -1,6 +1,8 @@
 # The Football Pundits: Decoding the beautiful game ⚽️
 
-![alt text](<Power_BI visualisation/the_football_pundits.png>)
+
+<video controls src="the-football-pundits.mp4" title="Title"></video>
+
 
 ## 📑 [Table of Contents](#Table_of_Contents)
 
