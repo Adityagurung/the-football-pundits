@@ -124,7 +124,7 @@ Link to Power BI Dashboard - https://app.powerbi.com/groups/me/dashboards/db2f08
 
 The dashboard consists of 6 visualisation charts:
 
-Data is collected from 2020-2025 mid year for respective 6 leagues - Bundesliga, Eredivisie, Laliga, Ligue-1, Premier-League, Serie-a of first class/division league in Germany, Netherlands, Spain, France, Italy and England(UK)
+Data is collected from 2020-2025 mid year for respective 6 leagues - Bundesliga, Eredivisie, Laliga, Ligue-1, Serie-a and Premier-League of first class/division league in Germany, Netherlands, Spain, France, Italy and England(UK)
 
 1. Chart 1: League Performance Over Time
 Displays the average goals per game for each league, broken down year by year, to analyze scoring trends over time.
