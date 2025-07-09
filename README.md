@@ -28,7 +28,7 @@ In professional football, gaining a competitive edge increasingly relies on acti
 
 The raw data for this project comes from football statistics originally scraped from the [Transfermarkt](https://en.wikipedia.org/wiki/Transfermarkt) website. The dataset consists of multiple CSV files containing information on competitions, matches, clubs, players, player valuations, and appearances. It is automatically updated on a weekly basis. Each file includes attributes specific to an entity, along with unique IDs that allow the files to be joined together for analysis.
 
-We access this dataset through [Kaggle](https://www.kaggle.com/datasets/davidcariboo/player-scores), downloading it directly into the `data/` folder of our GitHub repository using the **Kaggle API**. For more details about the dataset, refer to [our instructions](./data/README.md) or visit the [Kaggle dataset page](https://www.kaggle.com/datasets/davidcariboo/player-scores).
+Access this dataset through [Kaggle](https://www.kaggle.com/datasets/davidcariboo/player-scores), downloading it directly into the `data/` folder of our GitHub repository using the **Kaggle API**. For more details about the dataset, refer to [our instructions](./data/README.md) or visit the [Kaggle dataset page](https://www.kaggle.com/datasets/davidcariboo/player-scores).
 
 
 ## 🎯 [Objectives](#objectives)
@@ -59,7 +59,7 @@ Certainly! Here's a clearer, more professional rewrite of your project objective
 
 ---
 
-To achieve the project objectives, we have built a complete end-to-end data pipeline. The pipeline begins with raw football data sourced from Kaggle (originally scraped from Transfermarkt) and culminates in a Power BI dashboard designed to deliver actionable insights on players, teams, and leagues.
+To achieve the project objectives, I have built a complete end-to-end data pipeline. The pipeline begins with raw football data sourced from Kaggle (originally scraped from Transfermarkt) and culminates in a Power BI dashboard designed to deliver actionable insights on players, teams, and leagues.
 
 ## ⚙️ [Tools/ Resources Used](#tools-resources-used)
 
