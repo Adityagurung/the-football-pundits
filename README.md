@@ -108,9 +108,6 @@ To achieve the project objectives, I have built a complete end-to-end data pipel
    👉 [Instructions](./spark-distributed-computing/README.md)
 
 6. **Data Transformation in BigQuery (dbt)** – Use dbt to transform the external table into materialized tables focusing on data from the top five European leagues.
-   👉 [Instructions](./dbt-data-transformation/README.md)
-   
-6. **Data Transformation in BigQuery (dbt)** – Use dbt to transform the external table into materialized tables focusing on data from the top five European leagues.
    👉 [Instructions](./dbt-data-transformation-new/README.md) 
 
 8. **Partitioning and Clustering** – Optimize BigQuery materialized tables by partitioning data by date and clustering by `player_id` for improved performance and cost-efficiency.
