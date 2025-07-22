@@ -2,7 +2,7 @@
 
 *We use terraform to construct our GCP resources: Google Cloud Storage Bucket: `capstone_datalake` and Google BigQuery Dataset: `capstone_dataset`.*
 
-Pre-requisites: [Setup GCP account and VM](..gcp-cloud-infrastructure/README.md)
+Pre-requisites: [Setup GCP account and VM](.gcp-cloud-infrastructure/README.md)
 
 ```bash
 $~> cd terraform
