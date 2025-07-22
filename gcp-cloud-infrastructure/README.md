@@ -1,6 +1,6 @@
 # Google Cloud Platform: Cloud infrastructure
 
-*We build our end-to-end data pipeline that visualises football data using the cloud, specifically, tools and infrastructure from the Google Cloud Platform. For that, we first setup our Google Project, service accounts, and our virtual machine (VM). We also setup a connection to our local machine, as well as to our project github repository.*
+*I build end-to-end data pipeline that visualises football data using the cloud, specifically, tools and infrastructure from the Google Cloud Platform. For that, we first setup our Google Project, service accounts, and our virtual machine (VM). We also setup a connection to our local machine, as well as to our project github repository.*
 
 ## Setup GCP Project and Service Accounts
 
