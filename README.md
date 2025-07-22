@@ -109,10 +109,13 @@ To achieve the project objectives, I have built a complete end-to-end data pipel
 
 6. **Data Transformation in BigQuery (dbt)** – Use dbt to transform the external table into materialized tables focusing on data from the top five European leagues.
    👉 [Instructions](./dbt-data-transformation/README.md)
+   
+6. **Data Transformation in BigQuery (dbt)** – Use dbt to transform the external table into materialized tables focusing on data from the top five European leagues.
+   👉 [Instructions](./dbt-data-transformation-new/README.md) 
 
-7. **Partitioning and Clustering** – Optimize BigQuery materialized tables by partitioning data by date and clustering by `player_id` for improved performance and cost-efficiency.
+8. **Partitioning and Clustering** – Optimize BigQuery materialized tables by partitioning data by date and clustering by `player_id` for improved performance and cost-efficiency.
 
-8. **Build Dashboard (Power BI)** – Create interactive visualizations to analyze player and league performance using key metrics such as goal contributions and disciplinary records.
+9. **Build Dashboard (Power BI)** – Create interactive visualizations to analyze player and league performance using key metrics such as goal contributions and disciplinary records.
 
   ![alt text](e2e_football_data_workflow.PNG)
 
